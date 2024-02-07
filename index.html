@@ -1,0 +1,22 @@
+# Vamos a crear una carpeta llamada templaste donde colocaremos el diseño de la página, el primero es el index
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>INICIO</h1>
+    <form action="{{ url_for('resultado') }}">
+        <label>Maximo de carga</label>
+        <br>
+        <input type="text" name="maxcarga">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
